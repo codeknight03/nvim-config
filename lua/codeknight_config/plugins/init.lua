@@ -39,13 +39,5 @@ return {
 	{  "github/copilot.vim"},
   	{ "eandrju/cellular-automaton.nvim"},
 	{"laytan/cloak.nvim"},
-	 { "ellisonleao/gruvbox.nvim" },
-
-  -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox",
-    },
+	{ "ellisonleao/gruvbox.nvim" }
   }
-}
