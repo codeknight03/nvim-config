@@ -46,5 +46,26 @@ return {
         cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
         ft = { "markdown" },
         build = function() vim.fn["mkdp#util#install"]() end,
+    },
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+    },
+    {
+        "buoto/gotests-vim"
+    },
+    {
+        "mfussenegger/nvim-dap"
+    },
+    {
+        "leoluz/nvim-dap-go"
+    },
+    {
+        "rcarriga/nvim-dap-ui",
+        dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" }
+    },
+    {
+        "hashivim/vim-terraform"
     }
 }
