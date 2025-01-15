@@ -1,3 +1,4 @@
+-- Existing code...
 require("codeknight_config.remap")
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -33,4 +34,11 @@ vim.diagnostic.config({
 -- Show line diagnostics automatically in hover window
 vim.o.updatetime = 250
 vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+
+-- Auto-save buffer if the file extension is .txt
+vim.cmd [[
+    autocmd BufWritePost,BufEnter *.txt setlocal autoread
+    autocmd TextChanged,TextChangedI *.txt silent! write
+]]
+
 print("hello from codeknight")

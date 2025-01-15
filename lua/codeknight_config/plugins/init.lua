@@ -67,5 +67,14 @@ return {
     },
     {
         "hashivim/vim-terraform"
+    },
+    {
+        "grafana/vim-alloy"
+    },
+    {
+        "mfussenegger/nvim-dap-python"
+    },
+    {
+        "ThePrimeagen/vim-be-good"
     }
 }
