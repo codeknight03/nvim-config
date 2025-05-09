@@ -4,7 +4,6 @@ return {
     branch = '0.1.x',
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
-  { "rose-pine/neovim",                name = "rose-pine" },
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
   { "nvim-treesitter/playground" },
   {
@@ -12,6 +11,7 @@ return {
     branch = "harpoon2",
     dependencies = { "nvim-lua/plenary.nvim" }
   },
+  { "ellisonleao/gruvbox.nvim",               priority = 1000, config = true, opts = ... },
   { "mbbill/undotree" },
   { "tpope/vim-fugitive" },
   { "nvim-treesitter/nvim-treesitter-context" },
