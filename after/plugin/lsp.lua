@@ -3,17 +3,15 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-  'tsserver',
-  'rust_analyzer',
   'gopls',
   'lua_ls',
   'terraformls',
   'tflint',
   'pyright',
-  'ruff_lsp',
+  'ruff',
   'bashls',
-  'clangd'
-})
+  'clangd',
+  'ts_ls' })
 
 -- Fix Undefined global 'vim'
 lsp.nvim_workspace()
